@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "gp-experiments"
+version = "0.1.0"
+description = ""
+authors = ["shu13830 <shu1miyazawa@gmail.com>"]
+readme = "README.md"
+packages = [{include = "gp_experiments"}]
+
+[tool.poetry.dependencies]
+python = ">=3.11,<3.12"
+numpy = "^1.22.0"
+gpytorch = "^1.11"
+tensorflow = "^2.13.0"
+gpflow = "^2.9.0"
+
+[tool.poetry.group.dev.dependencies]
+black = "^23.9.1"
+flake8 = "^6.1.0"
+pytest = "^7.4.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
